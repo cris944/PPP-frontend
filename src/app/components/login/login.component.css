@@ -1,0 +1,95 @@
+/* General body styling to ensure full screen height */
+body, html {
+    
+    height: 100%; /* Full height of the viewport */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container styling */
+  .container {
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Use viewport height (100% of the screen height) */
+    background-image: url(file\ \(2\).jpg);
+  }
+  
+  /* Estilo para la imagen de usuario */
+  .user-image {
+    display: flex; /* Flexbox en el contenedor de la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+  }
+  
+  .user-image img {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    height: 250px; /* Ajusta el tamaño de la imagen */
+    object-fit: cover; /* Hace que la imagen cubra el área sin deformarse */
+  }
+  
+  /* Styling for the form */
+  .login-form {
+    width: 100%;
+    max-width: 400px; /* Limit form width */
+    background-color: #00000000;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0d0d0d00;
+    text-align: center; /* Centrar el contenido dentro del formulario */
+  }
+  
+  /* Form groups styling */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  input {
+    width: 250px;
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #4CAF50;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button.btn {
+    width: 250px;
+    padding: 12px;
+    background-color: #e4ce01;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #e9ed07;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #e9e5f0;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

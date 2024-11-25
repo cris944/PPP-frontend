@@ -1,0 +1,122 @@
+<div class="card solicitud-form">
+  <h3>Carta de Presentación</h3>
+  <h5>Solicitar</h5>
+  <div class="p-grid form-container">
+    <!-- Apellidos y Nombres -->
+    <div class="p-col-6">
+      <label for="nombres">Apellidos y Nombres</label>
+      <input
+        id="nombres"
+        type="text"
+        pInputText
+        placeholder="Marquez Fernandez Jaime"
+        disabled
+      />
+    </div>
+
+    <!-- DNI -->
+    <div class="p-col-6">
+      <label for="dni">DNI</label>
+      <input
+        id="dni"
+        type="text"
+        pInputText
+        placeholder="60852561"
+        disabled
+      />
+    </div>
+
+    <!-- Teléfono -->
+    <div class="p-col-6">
+      <label for="telefono">Teléfono</label>
+      <input
+        id="telefono"
+        type="text"
+        pInputText
+        placeholder="955357462"
+        disabled
+      />
+    </div>
+
+    <!-- Correo -->
+    <div class="p-col-6">
+      <label for="correo">Correo</label>
+      <input
+        id="correo"
+        type="email"
+        pInputText
+        placeholder="jaime.marquez@upeu.edu.pe"
+        disabled
+      />
+    </div>
+
+    <!-- Nombre de Empresa -->
+    <div class="p-col-6">
+      <label for="empresa">Nombre de Empresa</label>
+      <input
+        id="empresa"
+        type="text"
+        pInputText
+        placeholder="Ingrese el nombre de la empresa"
+      />
+    </div>
+
+    <!-- Correo Electrónico -->
+    <div class="p-col-6">
+      <label for="correoEmpresa">Correo Electrónico</label>
+      <input
+        id="correoEmpresa"
+        type="email"
+        pInputText
+        placeholder="correo@empresa.com"
+      />
+    </div>
+
+    <!-- RUC -->
+    <div class="p-col-6">
+      <label for="ruc">RUC</label>
+      <input
+        id="ruc"
+        type="text"
+        pInputText
+        placeholder="Ingrese el RUC"
+      />
+    </div>
+
+    <!-- Forma Jurídica -->
+    <div class="p-col-6">
+      <label for="formaJuridica">Forma Jurídica</label>
+      <input
+        id="formaJuridica"
+        type="text"
+        pInputText
+        placeholder="Ingrese la forma jurídica"
+      />
+    </div>
+  </div>
+
+  <!-- Términos y Condiciones -->
+  <div class="checkbox-container">
+    <p-checkbox
+      binary="true"
+      [(ngModel)]="acceptTerms"
+    ></p-checkbox>
+    <label for="acceptTerms">I agree to Terms of Service & Privacy Policy</label>
+  </div>
+
+  <!-- Botones -->
+  <div class="buttons-container">
+    <button
+      pButton
+      label="Delete Requirements"
+      class="p-button-secondary"
+      (click)="onDeleteRequirements()"
+    ></button>
+    <button
+      pButton
+      label="Send Requirements"
+      class="p-button-success"
+      (click)="onSendRequirements()"
+    ></button>
+  </div>
+</div>
